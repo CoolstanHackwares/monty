@@ -2,7 +2,7 @@
 
 /**
  * push - A function that adds a new node at the beginning
- * of the stack function 
+ * of the stack function
  * @stack: The head of the stack
  * @param: The value to add on the stack
  *
@@ -13,6 +13,7 @@
 void push(stack_t **stack, unsigned int param)
 {
 	stack_t *new_node = malloc(sizeof(stack_t));
+
 	if (new_node == NULL)
 		handle_error(ERR_BAD_MALL, NULL, 0, NULL);
 
@@ -38,6 +39,7 @@ void push(stack_t **stack, unsigned int param)
 void push_queue(stack_t **stack, unsigned int param)
 {
 	stack_t *new_node = malloc(sizeof(stack_t));
+
 	if (new_node == NULL)
 		handle_error(ERR_BAD_MALL, NULL, 0, NULL);
 
@@ -47,6 +49,7 @@ void push_queue(stack_t **stack, unsigned int param)
 	if (*stack)
 	{
 		stack_t *current = *stack;
+
 		while (current->next != NULL)
 			current = current->next;
 

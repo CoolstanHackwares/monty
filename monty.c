@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define BUFFER_SIZE 1024
-
 stack_t *head = NULL;
+
+#define BUFFER_SIZE 1024
 
 /**
  * main - The Monty entry point
